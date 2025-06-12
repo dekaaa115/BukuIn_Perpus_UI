@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Buku in</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#212121]">
+
+    <div class="h-screen flex">
+         <div class="w-full lg:w-1/2 bg-[#333333] flex items-center justify-center p-8">
+            <div class="w-full max-w-md">
+                <h1 class="text-white text-4xl font-bold mb-2">Buku in</h1>
+                <h2 class="text-white text-3xl font-bold mt-8">Register</h2>
+                <p class="text-gray-400 mt-2 mb-8">Create your account to get started.</p>
+                <form action="php/register_process.php" method="POST">
+                    <div class="mb-4">
+                        <label class="block text-gray-300 text-sm font-bold mb-2" for="reg-email">Email</label>
+                        <input class="w-full bg-[#4F4F4F] text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-purple-400" id="reg-email" type="email" name="email" placeholder="Enter your email/username" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 text-sm font-bold mb-2" for="reg-name">Name</label>
+                        <input class="w-full bg-[#4F4F4F] text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-purple-400" id="reg-name" type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 text-sm font-bold mb-2" for="reg-password">Password</label>
+                        <input class="w-full bg-[#4F4F4F] text-white rounded-lg py-3 px-4 mb-3 focus:outline-none focus:ring-2 focus:ring-purple-400" id="reg-password" type="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button class="w-full bg-[#A78BFA] hover:bg-purple-600 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline" type="submit">
+                        Sign Up
+                    </button>
+                    <p class="text-center text-gray-400 text-sm mt-6">
+                        Already have an account? <a href="login.php" class="font-bold text-purple-400 hover:text-purple-300">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="hidden lg:flex w-1/2 bg-white items-center justify-center">
+             <img src="assets/images/background.png" alt="Library Books" class="h-full w-full object-cover">
+        </div>
+    </div>
+
+</body>
+</html>

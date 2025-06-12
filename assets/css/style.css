@@ -1,0 +1,31 @@
+/* Custom styles from the original design */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #212121; /* Fallback background */
+}
+
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #2D3748;
+}
+::-webkit-scrollbar-thumb {
+    background: #4A5568;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}
+
+/* Class for the active navigation link in the sidebar */
+.active-nav {
+    background-color: #A78BFA;
+    color: white;
+}
+
+/* Hover effect for non-active navigation links */
+.nav-item:hover {
+    background-color: #4A4A4A;
+}
